@@ -1,6 +1,8 @@
 console.log("Connected 🚀✌🏼");
 
-// Quote array
+// ---------------------------------------------- //
+// --------------- Quote array ------------------ //
+// ---------------------------------------------- //
 const quotes = [
   { id: 'quote1', speed: 0.5 },
   { id: 'quote2', speed: 0.7 },
@@ -12,7 +14,9 @@ const quotes = [
   { id: 'quote8', speed: 0.6 },
 ];
 
-// Quote array loop
+// ---------------------------------------------- //
+// ------------- Quote array loop --------------- //
+// ---------------------------------------------- //
 window.addEventListener('scroll', () => {
   const scrollY = window.scrollY;
   quotes.forEach(quote => {
@@ -22,30 +26,38 @@ window.addEventListener('scroll', () => {
 });
 
 
-
+// ---------------------------------------------- //
+// ----------------- Carousel ------------------- //
+// ---------------------------------------------- //
 const buttons = document.querySelectorAll("[data-carousel-button]");
 
 buttons.forEach(button => {
   button.addEventListener("click", () => {
     const offset = button.dataset.carouselButton === "next" ? 1 : -1
     const slides = button.closest("[data-carousel]").querySelector('[data-slides]')
-
+    
     const activeSlide = slides.querySelector("[data-active]")
     let newIndex = [...slides.children].indexOf(activeSlide) + offset
     if (newIndex < 0) newIndex = slides.children.length - 1
     if (newIndex >= slides.children.length) newIndex = 0
-
+    
     slides.children[newIndex].dataset.active = true
     delete activeSlide.dataset.active
   })
 })
 
+
+// ---------------------------------------------- //
+// ------------ Scroll to top button ------------ //
+// ---------------------------------------------- //
 document.querySelector('.scroll-to-top-btn').addEventListener('click', () => {
   window.scrollTo({top: 0, behavior: 'smooth'});
 });
 
 
-// Test star animation code //
+// ---------------------------------------------- //
+// ------------- Star animation code ------------ //
+// ---------------------------------------------- //
 const sky = document.querySelector('.sky');
 const numStars = 20; // Number of stars to create
 

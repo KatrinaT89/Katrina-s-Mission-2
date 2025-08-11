@@ -8,8 +8,9 @@ a {
   text-decoration: none;
 }
 
-
-/* Nav Bar */
+/* --------------------------------------- */
+/* ------------- Nav Bar /* -------------- */
+/* --------------------------------------- */
 .nav-bar {
   display: flex;
   align-items: center;
@@ -67,7 +68,9 @@ body {
 }
 
 
-/* Main heading - Contct Page */
+/* --------------------------------------- */
+/* ------- Contact Page Heading /* ------- */
+/* --------------------------------------- */
 h1 {
   color: white;
   text-align: center;
@@ -84,8 +87,9 @@ h1 a {
   color: white;
 }
 
-
-/* Main heading home page */
+/* ---------------------------------------- */
+/* -------- Main heading home page -------- */
+/* ---------------------------------------- */
 .heading-2 {
   color: #f2f2f2;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
@@ -100,7 +104,12 @@ h1 a {
 }
 
 
-/* Quote box container */
+/* ---------------------------------------- */
+/* --------- Quote box container ---------- */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* --------- Quote box container ---------- */
+/* ---------------------------------------- */
 .quote-container {
   display: flex;
   position: relative;
@@ -108,7 +117,10 @@ h1 a {
   padding-bottom: 0px;
 }
 
-/* quote boxes */
+
+/* ---------------------------------------- */
+/* -------------- Quote boxes ------------- */
+/* ---------------------------------------- */
 .quote-box {
   display: flex;
   align-items: center;
@@ -125,7 +137,10 @@ h1 a {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Floating Quote Boxe content */
+
+/* ---------------------------------------- */
+/* ------ Floating Quote box Content ------ */
+/* ---------------------------------------- */
 #quote1 {
   top: 180px;
   left: 2%;
@@ -328,8 +343,9 @@ h1 a {
   z-index: -1;  /* Keeps background image behind the text */
 }
 
-
-/* Carousel */
+/* ------------------------------------------- */
+/* ---------------- Carousel ----------------- */
+/* ------------------------------------------- */
 .carousel {
   width: 100vw;
   height: 70vh;
@@ -365,7 +381,9 @@ h1 a {
   object-position: center;
 }
 
-/* Carousel buttons */
+/* ------------------------------------------- */
+/* ------------ Carousel Buttons ------------- */
+/* ------------------------------------------- */
 .carousel-button {
   position: absolute;
   z-index: 2;
@@ -399,25 +417,19 @@ h1 a {
   right: 1rem;
 }
 
-/* Caeousel quotes */
+/* -------------------------------------------- */
+/* -------------- Carousel quotes ------------- */
+/* -------------------------------------------- */
 .carousel-quote {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(
-    -50%,
-    -50%
-  ); /* centers quote vertically & horizontally */
+  transform: translate(-50%, -50%); /* centers quote vertically & horizontally */
   color: white;
   font-size: 2rem;
   text-align: center;
   padding: 10px 20px;
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.1
-  ); /* semi-transparent background for readability */
+  background-color: rgba(0, 0, 0, 0.1); /* semi-transparent background for readability */
   border-radius: 5px;
 }
 
@@ -425,8 +437,9 @@ h1 a {
   color: aqua;
 }
 
-
-/* Contact Form - Contact Page */
+/* -------------------------------------------- */
+/* ------------- Contact Page Form ------------ */
+/* -------------------------------------------- */
 form {
   display: flex;
   flex-direction: column;
@@ -439,7 +452,9 @@ form {
   border-radius: 6px;
 }
 
-/* Form container */
+/* -------------------------------------------- */
+/* -------------- Form Container -------------- */
+/* -------------------------------------------- */
 .form-container {
   clear: both;
   position: relative;
@@ -453,7 +468,9 @@ form {
   border-radius: 6px;
 }
 
-/* Form input fields */
+/* -------------------------------------------- */
+/* ------------- Form Input Fields ------------ */
+/* -------------------------------------------- */
 input[type="text"],
 input[type="email"],
 textarea {
@@ -477,7 +494,9 @@ input[type="submit"] {
 }
 
 
-/* Bottom right button to scroll to top of page */
+/* -------------------------------------------- */
+/* ----- Scroll to Top Button - home page ----- */
+/* -------------------------------------------- */
 .scroll-to-top-btn {
   display: flex;
   font-size: 50px;
@@ -494,6 +513,9 @@ input[type="submit"] {
   color: aqua;
 }
 
+/* -------------------------------------------- */
+/* --- Responsive Web Design - screen sizes---- */
+/* -------------------------------------------- */
 @media screen and (max-width: 600px) {
   .nav-bar {
     font-size: 15px;
@@ -549,11 +571,8 @@ input[type="submit"] {
   .heading-2 {
     font-size: 40px;
   }
-
-  /* .footer {
-    font-size: 10px;
-  } */
 }
+
 
 @media screen and (min-width: 601px) {
   .nav-bar {
@@ -586,7 +605,6 @@ input[type="submit"] {
   }
 
 
-
 @media screen and (min-width: 1024px) {
   .nav-bar {
     flex-direction: row;
@@ -603,7 +621,7 @@ input[type="submit"] {
   }
 
   .quote-box {
-    width: 300px; /* or whatever larger width you want */
+    width: 300px;
     height: 400px;
     font-size: 30px;
   }
@@ -613,25 +631,26 @@ input[type="submit"] {
   }
 }
 
-
-/* test star annimation code */
+/* -------------------------------------------- */
+/* ---------- Star annimation code ------------ */
+/* -------------------------------------------- */
 .sky {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden; /* Hide stars outside the sky */
+  overflow: hidden; /* Hides stars outside the sky */
   pointer-events: none;
 }
 
 .star {
   position: absolute;
-  width: 2px; /* Adjust size as needed */
+  width: 2px;
   height: 2px;
   background-color: white;
-  border-radius: 50%; /* Make them circular */
-  opacity: 0; /* Initially hidden */
+  border-radius: 50%; /* Maks stars round */
+  opacity: 0; /* Initially hides stars */
   animation: shoot 3s linear infinite; /* Animation name, duration, timing, and repetition */
 }
 
@@ -652,7 +671,9 @@ input[type="submit"] {
   }
 }
 
-/* Footer */
+/* ---------------------------------------- */
+/* ---------------- Footer ---------------- */
+/* ---------------------------------------- */
 .footer {
   position:relative;
   left: 0;
