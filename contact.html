@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="mission-02.css">
+    <script src="mission-02.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b922d2da65.js" crossorigin="anonymous"></script>
+</head>
+<body>
+     <header>
+        <!-- <h1 class="header-h1">Motivational Quotes</h1> -->
+        <div>
+            <nav class="nav-bar">
+                <a href="mission-02.html"><i class="fa-regular fa-house"></i></a>
+                <a href="contact.html"><i class="fa-regular fa-envelope"></i></a>
+                <a href=""></a>
+
+            </nav>
+        </div>
+    </header>
+    <h1> <a href="mission-02.html" class="contact">Contact</a></h1>
+
+     <!-- Contact Us Form -->
+  <section>
+    <div class="form-container" id="contact">
+      <form action="mailto:katrinat@missionreadyhq.com" method="post" autocomplete="on" enctype="text/plain">
+        <fieldset>
+          <!-- <h1 class="contact-us">Contact Us</h1> -->
+        
+          <!-- first input field -->
+          <label>Name:</label>
+          <input type="text" name="name" required placeholder="First nand last name...">
+          <br>
+          <br>
+
+          <!-- second input field -->
+          <label for="email">Email:</label>
+          <input type="email" name="email" />
+          <br>
+          <br>
+        
+          <!-- Third input field - message area -->
+          <label>Message:</label>
+          <br>
+
+          <textarea name="message" placeholder="what can we help you with?..."></textarea>
+          <br>
+          <br>
+
+          <!-- checkboxes -->
+          <label>Tick an option if you would like to recieve one or both of our newsletters with 
+                  exciting information on North Canterbury Hikes, as well as New Zealand Hikes!</label>
+          <br>
+          <br>
+          <input type="checkbox" class="Affirmations" name="subject" value="Affirmations"> 
+          Affirmations 
+          <input type="checkbox" class="Motivational-quotes" name="subject" value="Motivational Quotes"> Motivational Quotes
+          <br>
+          <br>
+          <input class="submit" type="submit" value="submit">
+        </fieldset>
+      </form>
+    </div>
+  </section>
+  <div class="footer">
+        <p><i class="fa-regular fa-copyright"></i> Copyright 2025 Katrina Thorpe</p>
+    </div>
+</body>
+</html>

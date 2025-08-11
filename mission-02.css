@@ -1,0 +1,671 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* Nav Bar */
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100px;
+  padding: 10px;
+  gap: 10px;
+  font-size: 15px;
+  text-decoration: none;
+  /* background-color: #13546b; */
+}
+
+.nav-bar:hover {
+  color: aqua;
+}
+
+.nav-bar a {
+  font-size: 25px;
+  color: white;
+}
+
+.nav-bar a:hover {
+  color: aqua;
+}
+
+
+/* Body */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+body {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  position: relative;
+  padding-bottom: 0;
+  background-image: url("Images/blue-night-sky.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: sans-serif;
+  overflow-x: hidden;
+  font-family: lato, sans-serif;
+}
+
+
+/* Main heading - Contct Page */
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 60px;
+  padding: 50px;
+}
+
+.contact:hover {
+  color: aqua;
+}
+
+h1 a {
+  text-decoration: none;
+  color: white;
+}
+
+
+/* Main heading home page */
+.heading-2 {
+  color: #f2f2f2;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  font-family: lato, sans-serif;
+  font-size: 50px;
+  text-align: center;
+  padding: 100px;
+}
+
+.heading-2:hover {
+  color: aqua;
+}
+
+
+/* Quote box container */
+.quote-container {
+  display: flex;
+  position: relative;
+  min-height: 2500px;
+  padding-bottom: 0px;
+}
+
+/* quote boxes */
+.quote-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 600px;
+  position: fixed;
+  width: 180px;
+  height: 300px;
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Floating Quote Boxe content */
+#quote1 {
+  top: 180px;
+  left: 2%;
+  /* background-image: url(Images/snowy-mountains.jpg); */
+  background-color: rgba(255, 255, 255, 0.3);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#quote1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(Images/snowy-mountains.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 20px;
+  opacity: 0.6;
+  z-index: -1;  /* Keeps background image behind the text */
+}
+
+
+#quote2 {
+  top: 160px;
+  right: 2%;
+  /* background-image: url(Images/pink-sunset.jpg); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#quote2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(Images/pink-sunset.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 20px;
+  opacity: 0.6; /* Adjust transparency here */
+  z-index: -1;  /* Keeps it behind the text */
+}
+
+#quote3 {
+  top: 210px;
+  left: 25%;
+  /* background-image: url(Images/pink-sky.jpg); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#quote3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(Images/pink-sky.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 20px;
+  opacity: 0.6;
+  z-index: -1;  /* Keeps background image behind the text */
+}
+
+#quote4 {
+  top: 250px;
+  right: 25%;
+  /* background-image: url(Images/pink-night-sky.jpg); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#quote4::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(Images/pink-night-sky.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 20px;
+  opacity: 0.6;
+  z-index: -1;  /* Keeps background image behind the text */
+}
+
+#quote5 {
+  top: 650px;
+  left: 15%;
+  /* background-image: url(Images/pink-sky-moon.jpg); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#quote5::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(Images/pink-sky-moon.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 20px;
+  opacity: 0.6;
+  z-index: -1;  /* Keeps background image behind the text */
+}
+
+#quote6 {
+  top: 700px;
+  right: 5%;
+  /* background-image: url(Images/pink-sky-plane.jpg); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#quote6::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(Images/pink-sky-plane.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 20px;
+  opacity: 0.6;
+  z-index: -1;  /* Keeps background image behind the text */
+}
+
+#quote7 {
+  top: 650px;
+  left: 10%;
+  /* background-image: url(Images/pink-purple-sky.jpg); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#quote7::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(Images/pink-purple-sky.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 20px;
+  opacity: 0.6;
+  z-index: -1;  /* Keeps background image behind the text */
+}
+
+#quote8 {
+  top: 750px;
+  right: 10%;
+  /* background-image: url(Images/sunset-ocean.jpg); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#quote8::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(Images/sunset-ocean.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 20px;
+  opacity: 0.6;
+  z-index: -1;  /* Keeps background image behind the text */
+}
+
+
+/* Carousel */
+.carousel {
+  width: 100vw;
+  height: 70vh;
+  position: relative;
+}
+
+.carousel > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Carousel slides */
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: 200ms opacity ease-in-out;
+  transition-delay: 200ms;
+}
+
+.slide[data-active] {
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0ms;
+}
+
+.slide > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Carousel buttons */
+.carousel-button {
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  font-size: 4rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  border-radius: 0.25rem;
+  padding: 0 0.5rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+  color: aqua;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.carousel-button:focus {
+  outline: 1px solid black;
+}
+
+.carousel-button.prev {
+  left: 1rem;
+}
+
+.carousel-button.next {
+  right: 1rem;
+}
+
+/* Caeousel quotes */
+.carousel-quote {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(
+    -50%,
+    -50%
+  ); /* centers quote vertically & horizontally */
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  padding: 10px 20px;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.1
+  ); /* semi-transparent background for readability */
+  border-radius: 5px;
+}
+
+.carousel-quote:hover {
+  color: aqua;
+}
+
+
+/* Contact Form - Contact Page */
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  color: white;
+  background-color: rgba(45, 45, 45, 0.7);
+  border-radius: 6px;
+}
+
+/* Form container */
+.form-container {
+  clear: both;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin: 0px auto;
+  margin-bottom: 50px;
+  max-width: 700px;
+  border-radius: 6px;
+}
+
+/* Form input fields */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+input[type="submit"] {
+  padding: 8px 20px;
+  margin: 8px 0;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: aqua;
+}
+
+
+/* Bottom right button to scroll to top of page */
+.scroll-to-top-btn {
+  display: flex;
+  font-size: 50px;
+  text-decoration: none;
+  align-self: flex-end;
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  background-color: rgba(182, 182, 182, 0.4);
+}
+
+.scroll-to-top-btn:hover {
+  color: aqua;
+}
+
+@media screen and (max-width: 600px) {
+  .nav-bar {
+    font-size: 15px;
+    align-items: center;
+  }
+
+  .quote-box {
+    align-items: center;
+    font-size: 20px;
+    width: 170px;
+  }
+
+  #quote1 {
+    font-size: 15px;
+  }
+
+  #quote2 {
+    font-size: 15px;
+  }
+
+  #quote3 {
+    font-size: 15px;
+  }
+
+  #quote4 {
+    font-size: 15px;
+  }
+
+  #quote5 {
+    font-size: 15px;
+  }
+
+  #quote6 {
+    font-size: 15px;
+  }
+  #quote7 {
+    font-size: 15px;
+  }
+
+  #quote8 {
+    font-size: 15px;
+  }
+
+  .quote-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .carousel-quote {
+    font-size: 20px;
+  }
+
+  .heading-2 {
+    font-size: 40px;
+  }
+
+  /* .footer {
+    font-size: 10px;
+  } */
+}
+
+@media screen and (min-width: 601px) {
+  .nav-bar {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .heading-2 {
+    font-size: 50px;
+  }
+
+  .quote-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .quote-box {
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+    width: 220px;
+  }
+
+  .carousel-quote {
+    font-size: 20px;
+  }
+
+  .form-container {
+    flex-direction: column;
+  }
+
+
+
+@media screen and (min-width: 1024px) {
+  .nav-bar {
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .heading-2 {
+    font-size: 60px;
+  }
+
+ .quote-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .quote-box {
+    width: 300px; /* or whatever larger width you want */
+    height: 400px;
+    font-size: 30px;
+  }
+
+  .carousel-quote {
+    font-size: 30px;
+  }
+}
+
+
+/* test star annimation code */
+.sky {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Hide stars outside the sky */
+  pointer-events: none;
+}
+
+.star {
+  position: absolute;
+  width: 2px; /* Adjust size as needed */
+  height: 2px;
+  background-color: white;
+  border-radius: 50%; /* Make them circular */
+  opacity: 0; /* Initially hidden */
+  animation: shoot 3s linear infinite; /* Animation name, duration, timing, and repetition */
+}
+
+@keyframes shoot {
+  0% {
+    transform: translate(0, 0) rotate(45deg); /* Start position and rotation */
+    opacity: 0;
+  }
+  10% {
+    opacity: 1; /* Fade in */
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(500px, 500px) rotate(45deg); /* End position */
+    opacity: 0; /* Fade out */
+  }
+}
+
+/* Footer */
+.footer {
+  position:relative;
+  left: 0;
+  bottom: 0;
+  color: white;
+  font-size: 18px;
+  width: 100%;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer:hover {
+  color: aqua;
+}
+}
