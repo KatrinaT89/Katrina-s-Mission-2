@@ -5,26 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Page</title>
     <link rel="stylesheet" href="mission-02.css">
-    <script src="mission-02.js"></script>
+    <script src="mission-02.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b922d2da65.js" crossorigin="anonymous"></script>
 </head>
 <body>
-     <header>
+    <header>
         
     <!-- ------------------------------------>
     <!-- ------------- Nav bar -------------->
     <!-- ------------------------------------>
-        <div>
-            <nav class="nav-bar">
-                <a href="mission-02.html"><i class="fa-regular fa-house"></i></a>
-                <a href="contact.html"><i class="fa-regular fa-envelope"></i></a>
-                <a href=""></a>
+      <div>
+        <nav class="nav-bar">
+          <a href="mission-02.html"><i class="fa-regular fa-house"></i></a>
+          <a href="contact.html"><i class="fa-regular fa-envelope"></i></a>
+          <a href=""></a>
 
-            </nav>
-        </div>
+        </nav>
+      </div>
     </header>
 
     <!-- ------------------------------------>
@@ -32,6 +32,15 @@
     <!-- ------------------------------------>
     <h1> <a href="mission-02.html" class="contact">Contact</a></h1>
 
+
+    <!-- ------------------------------------>
+    <!-- ------- star animation code -------->
+    <!-- ------------------------------------>
+    <div class="sky">
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+      </div>
 
     <!-- ------------------------------------>
     <!-- ----------- Contact Form ----------->
@@ -42,8 +51,8 @@
         <fieldset>
         
           <!-- first input field -->
-          <label>Name:</label>
-          <input type="text" name="name" required placeholder="First nand last name...">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required placeholder="First and last name...">
           <br>
           <br>
 
@@ -54,7 +63,7 @@
           <br>
         
           <!-- Third input field - message area -->
-          <label>Message:</label>
+          <label for="message">Message:</label>
           <br>
 
           <textarea name="message" placeholder="what can we help you with?..."></textarea>
@@ -82,6 +91,6 @@
     <!-- ------------------------------------>
   <div class="footer">
     <p><i class="fa-regular fa-copyright"></i> Copyright 2025 Katrina Thorpe</p>
-    </div>
+  </div>
 </body>
 </html>

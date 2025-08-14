@@ -10,8 +10,8 @@ const quotes = [
   { id: 'quote4', speed: 0.5 },
   { id: 'quote5', speed: 0.7 },
   { id: 'quote6', speed: 0.7 },
-  { id: 'quote7', speed: 0.5 },
-  { id: 'quote8', speed: 0.6 },
+  { id: 'quote7', speed: 0.6 },
+  { id: 'quote8', speed: 0.5 },
 ];
 
 // ---------------------------------------------- //
@@ -46,6 +46,15 @@ buttons.forEach(button => {
   })
 })
 
+// Making carousel change automatically //
+setInterval(() => {
+  const nextButton = document.querySelector('[data-carousel-button="next"]');
+  if (nextButton) {
+    nextButton.click();
+  }
+}, 4500);
+
+
 
 // ---------------------------------------------- //
 // ------------ Scroll to top button ------------ //
@@ -64,13 +73,13 @@ const numStars = 20; // Number of stars to create
 for (let i = 0; i < numStars; i++) {
   const star = document.createElement('div');
   star.classList.add('star');
-
+  
   // Randomize initial position
   star.style.left = Math.random() * window.innerWidth + 'px';
   star.style.top = Math.random() * window.innerHeight + 'px';
-
+  
   // Randomize animation delay to make them appear at different times
   star.style.animationDelay = -Math.random() * 5 + 's';
-
+  
   sky.appendChild(star);
 }

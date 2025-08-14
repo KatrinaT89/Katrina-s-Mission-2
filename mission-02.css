@@ -20,11 +20,6 @@ a {
   gap: 10px;
   font-size: 15px;
   text-decoration: none;
-  /* background-color: #13546b; */
-}
-
-.nav-bar:hover {
-  color: aqua;
 }
 
 .nav-bar a {
@@ -36,22 +31,13 @@ a {
   color: aqua;
 }
 
-
-/* Body */
-html,
-body {
-  height: 100%;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-}
-
 main {
   flex: 1;
 }
 
 body {
   display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   height: auto;
@@ -67,25 +53,6 @@ body {
   font-family: lato, sans-serif;
 }
 
-
-/* --------------------------------------- */
-/* ------- Contact Page Heading /* ------- */
-/* --------------------------------------- */
-h1 {
-  color: white;
-  text-align: center;
-  font-size: 60px;
-  padding: 50px;
-}
-
-.contact:hover {
-  color: aqua;
-}
-
-h1 a {
-  text-decoration: none;
-  color: white;
-}
 
 /* ---------------------------------------- */
 /* -------- Main heading home page -------- */
@@ -105,10 +72,7 @@ h1 a {
 
 
 /* ---------------------------------------- */
-/* --------- Quote box container ---------- */
-/* ---------------------------------------- */
-/* ---------------------------------------- */
-/* --------- Quote box container ---------- */
+/* ----- Floating Quote box container ----- */
 /* ---------------------------------------- */
 .quote-container {
   display: flex;
@@ -119,7 +83,7 @@ h1 a {
 
 
 /* ---------------------------------------- */
-/* -------------- Quote boxes ------------- */
+/* ---------- Floating quote boxes -------- */
 /* ---------------------------------------- */
 .quote-box {
   display: flex;
@@ -244,7 +208,7 @@ h1 a {
 }
 
 #quote5 {
-  top: 650px;
+  top: 800px;
   left: 15%;
   /* background-image: url(Images/pink-sky-moon.jpg); */
   background-size: cover;
@@ -269,7 +233,7 @@ h1 a {
 }
 
 #quote6 {
-  top: 700px;
+  top: 850px;
   right: 5%;
   /* background-image: url(Images/pink-sky-plane.jpg); */
   background-size: cover;
@@ -294,7 +258,7 @@ h1 a {
 }
 
 #quote7 {
-  top: 650px;
+  top: 950px;
   left: 10%;
   /* background-image: url(Images/pink-purple-sky.jpg); */
   background-size: cover;
@@ -319,7 +283,7 @@ h1 a {
 }
 
 #quote8 {
-  top: 750px;
+  top: 880px;
   right: 10%;
   /* background-image: url(Images/sunset-ocean.jpg); */
   background-size: cover;
@@ -391,7 +355,7 @@ h1 a {
   border: none;
   font-size: 4rem;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-50%); /* Centers the image perfectly */
   color: rgba(255, 255, 255, 0.5);
   cursor: pointer;
   border-radius: 0.25rem;
@@ -436,6 +400,47 @@ h1 a {
 .carousel-quote:hover {
   color: aqua;
 }
+
+
+/* -------------------------------------------- */
+/* ----- Scroll to Top Button - home page ----- */
+/* -------------------------------------------- */
+.scroll-to-top-btn {
+  position: absolute;
+  right: 0;
+  font-size: 50px;
+  text-decoration: none;
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  background-color: rgba(182, 182, 182, 0.4);
+}
+
+.scroll-to-top-btn:hover {
+  color: aqua;
+}
+
+
+/* --------------------------------------- */
+/* ----------- Contact Page /* ----------- */
+/* --------------------------------------- */
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 60px;
+  padding: 50px;
+}
+
+.contact:hover {
+  color: aqua;
+}
+
+h1 a {
+  text-decoration: none;
+  color: white;
+}
+
 
 /* -------------------------------------------- */
 /* ------------- Contact Page Form ------------ */
@@ -482,8 +487,9 @@ textarea {
 }
 
 input[type="submit"] {
+  display: block;
   padding: 8px 20px;
-  margin: 8px 0;
+  margin: 8px auto;
   color: black;
   text-decoration: none;
   cursor: pointer;
@@ -493,25 +499,6 @@ input[type="submit"] {
   background-color: aqua;
 }
 
-
-/* -------------------------------------------- */
-/* ----- Scroll to Top Button - home page ----- */
-/* -------------------------------------------- */
-.scroll-to-top-btn {
-  display: flex;
-  font-size: 50px;
-  text-decoration: none;
-  align-self: flex-end;
-  background: none;
-  border: none;
-  color: rgba(255, 255, 255, 0.5);
-  cursor: pointer;
-  background-color: rgba(182, 182, 182, 0.4);
-}
-
-.scroll-to-top-btn:hover {
-  color: aqua;
-}
 
 /* -------------------------------------------- */
 /* --- Responsive Web Design - screen sizes---- */
@@ -631,6 +618,7 @@ input[type="submit"] {
   }
 }
 
+
 /* -------------------------------------------- */
 /* ---------- Star annimation code ------------ */
 /* -------------------------------------------- */
@@ -649,7 +637,7 @@ input[type="submit"] {
   width: 2px;
   height: 2px;
   background-color: white;
-  border-radius: 50%; /* Maks stars round */
+  border-radius: 50%; /* Makes stars round */
   opacity: 0; /* Initially hides stars */
   animation: shoot 3s linear infinite; /* Animation name, duration, timing, and repetition */
 }
@@ -675,7 +663,14 @@ input[type="submit"] {
 /* ---------------- Footer ---------------- */
 /* ---------------------------------------- */
 .footer {
-  position:relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  visibility: visible;
+  opacity: 1;
+  z-index: 9999;
   left: 0;
   bottom: 0;
   color: white;
@@ -686,7 +681,14 @@ input[type="submit"] {
   text-align: center;
 }
 
+.footer p {
+  flex: 1 1 100%;
+  text-align: center;
+  margin: 5px 0;
+  color: white;
+  font-size: 15px;
+}
+
 .footer:hover {
   color: aqua;
-}
-}
+}}
